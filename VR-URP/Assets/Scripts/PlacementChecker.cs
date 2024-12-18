@@ -1,4 +1,5 @@
 using UnityEngine;
+// using UnityEngine.XR.Interaction.Toolkit.XRGrabInteracable;
 
 public class PlacementChecker : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class PlacementChecker : MonoBehaviour
     public GameObject successEffect; // Optional: Assign a particle effect or visual feedback
 
     private bool isPlacedCorrectly = false;
+
+    // private XRGrabInteractable grabInteractable;
+    // private bool isHolding = false; // Tracks whether the object is being held
+
 
     void Update()
     {
@@ -47,6 +52,7 @@ public class PlacementChecker : MonoBehaviour
     private void TriggerSuccessAction()
     {
         successEffect.SetActive(true);
+        templateObject.gameObject.SetActive(false);
 
         Debug.Log("Success effect triggered!");
     }
