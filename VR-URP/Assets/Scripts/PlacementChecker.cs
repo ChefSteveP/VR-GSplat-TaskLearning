@@ -1,5 +1,5 @@
 using UnityEngine;
-// using UnityEngine.XR.Interaction.Toolkit.XRGrabInteracable;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class PlacementChecker : MonoBehaviour
 {
@@ -15,7 +15,7 @@ public class PlacementChecker : MonoBehaviour
 
     private bool isPlacedCorrectly = false;
 
-    // private XRGrabInteractable grabInteractable;
+  
     // private bool isHolding = false; // Tracks whether the object is being held
 
 
